@@ -1,0 +1,248 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* En-tête */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    background: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Index Page */
+#index_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+}
+
+#index_page h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#index_page p {
+    max-width: 600px;
+    margin-bottom: 2em;
+}
+
+#index_page img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2em;
+}
+
+#index_page nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#index_page nav div a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #222;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#index_page nav div a:hover {
+    background-color: #444;
+    border: 2px solid transparent;
+    box-shadow: 0px 8px 15px rgba(3, 3, 3, 0.7);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Recipes Page */
+
+#recipes_list h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+#recipes_list a.recipe_link {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 2.5%;
+    padding: 10px;
+    border: 2px solid #222;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#recipes_list a.recipe_link:hover {
+    background-color: #444;
+    border: 2px solid transparent;
+    box-shadow: 0px 8px 15px rgba(3, 3, 3, 0.7);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+#recipes_list .recipe_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#recipes_list .delete_btn {
+    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 2.5%;
+}
+
+#recipes_list .delete_btn:hover {
+    color: darkred;
+}
+
+/* Recipe Page */
+
+#recipe_page {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#recipe_page h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#recipe_page p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+#recipe_page h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#recipe_page ul, #recipe_page ol {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+#recipe_page li {
+    padding-left: 2em;
+    color: #333;
+}
+
+#recipe_page li::before {
+    content: "- ";
+}
+
+/* Create Recipe Page */
+
+#create_recipe_form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#create_recipe_form h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#create_recipe_form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#create_recipe_form input[type="text"], #create_recipe_form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#create_recipe_form input[type="submit"] {
+    padding: 1em 2em;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#create_recipe_form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+#create_recipe_form textarea {
+    resize: none;
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
